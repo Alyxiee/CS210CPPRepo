@@ -13,15 +13,12 @@
 
 void Stack::push(const int value) {
     // TODO: add value to the top of data_ (vector has a method for this)
-
     if (!isFull()) {
         topIndex++;
         data[topIndex] = value;
     } else {
         std::cout << "Stack is full" << std::endl;
     }
-
-
 }
 
 void Stack::pop() {
@@ -58,8 +55,12 @@ int Stack::size() const {
 }
 
 bool Stack::isFull() const {
-    if (topIndex == 101) {
+    if (topIndex == 99) {
         return true;
     }
     return false;
+}
+
+Stack::Stack() {
+    return;
 }
