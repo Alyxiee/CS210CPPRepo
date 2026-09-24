@@ -84,3 +84,12 @@ add_executable(11_main_wrapup
         11_main_wrapup/Book.h
         11_main_wrapup/Catalog.cpp
         11_main_wrapup/Catalog.h)
+add_executable(Lab3
+        Lab3/ArrayList.h
+        Lab3/Data.cpp
+        Lab3/Data.h
+        Lab3/LinkedList.h
+        Lab3/List.h
+        Lab3/main.cpp
+        Lab3/Node.h
+        )
