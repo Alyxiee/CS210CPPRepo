@@ -92,4 +92,19 @@ add_executable(Lab3
         Lab3/List.h
         Lab3/main.cpp
         Lab3/Node.h
+        Lab3/Data.h
         )
+add_executable(Stacks_Queues
+        Stacks_Queues/StackList.h
+        Stacks_Queues/QueueList.h
+        Stacks_Queues/ArrayList.h
+        Stacks_Queues/Data.h
+        Stacks_Queues/LinkedList.h
+        Stacks_Queues/List.h
+        Stacks_Queues/main.cpp
+        Stacks_Queues/Node.h
+        Stacks_Queues/Queue.h
+        Stacks_Queues/Stack.h
+        Stacks_Queues/Process.h
+
+)
