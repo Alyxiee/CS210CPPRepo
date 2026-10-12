@@ -106,5 +106,14 @@ add_executable(Stacks_Queues
         Stacks_Queues/Queue.h
         Stacks_Queues/Stack.h
         Stacks_Queues/Process.h
-
+)
+add_executable(PA1-Uno-Turn-Order
+        PA1-Uno-Turn-Order/ArrayList.h
+        PA1-Uno-Turn-Order/Data.h
+        PA1-Uno-Turn-Order/LinkedList.h
+        PA1-Uno-Turn-Order/List.h
+        PA1-Uno-Turn-Order/main.cpp
+        PA1-Uno-Turn-Order/Node.h
+        PA1-Uno-Turn-Order/Player.h
+        PA1-Uno-Turn-Order/Stack.h
 )

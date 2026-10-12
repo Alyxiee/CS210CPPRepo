@@ -34,7 +34,7 @@ public:
          std::cout << "ArrayList is empty." << std::endl;
       }
       if (position >= size_) {
-         std::cout << "Position out of bounds." << std::endl;
+         //std::cout << "Position out of bounds." << std::endl;
       } else if (position < 0) {
          std::cout << "Position out of bounds." << std::endl;
          return;
@@ -112,6 +112,9 @@ public:
          std::cout << *data_[i] << ",";
       }
       std::cout << std::endl;
+   }
+   int getSize() const override {
+      return size_;
    }
    ~ArrayList() override {
       for (int i = 0; i < size_; ++i) {
