@@ -213,7 +213,7 @@ void Adventure::play() {
     }
     while (currentScene != nullptr) {
         Moment* m = currentScene->getData();
-        if (m != nullptr) {
+        if (m == nullptr) {
             break;
         }
         hp += m->getHpChange();
@@ -260,7 +260,7 @@ void Adventure::play() {
         currentScene = currentScene->getChoice(choice-1);
 
     }
-    std::cout << "Final HP: " << hp << "Final LOOTS: " << loot << std::endl;
+    std::cout << "Final HP: " << hp << "\n" << "Final LOOT: " << loot << std::endl;
     std::cout << "Inventory (" << inv.size() << " items)" << std::endl;
     inv.print();
 }
@@ -279,6 +279,7 @@ void Adventure::printStats() const {
 
 // TODO 15: print every ending in the story, one per line.
 void Adventure::printSpoilers() const {
+    printEndings(tree_.getRoot(),"");
 }
 
 // TODO 16: print every ending below scene.
@@ -433,7 +434,7 @@ void Adventure::optimalRun() const {
     std::string path = "";
     std::string optimalPath = "";
 
-    int optimalLoot = bestLoot(tree_.getRoot(), startHP_, path, optimalPath);
+    int optimalLoot = bestLoot(tree_.getRoot(), startHp_, path, optimalPath);
 
     if (optimalLoot != -1) {
         std::cout << "Optimal Advisor" << std::endl;
