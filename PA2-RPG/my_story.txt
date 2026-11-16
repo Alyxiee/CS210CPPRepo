@@ -1,19 +1,96 @@
 START_HP 10
-SCENE Starting UBWP-WP... Initialized. Welcome to UBWP. Do not be alarmed. Staying calm will greatly aid your adjustment to the Program.
+SCENE "Starting UNCP-WP... Initialized. Welcome to UNCP. Do not be alarmed. Staying calm will greatly aid your adjustment to the Program." You have awoken in a dark, damp place. You cannot see your surroundings. It feels like there is something strapped to your face, and it feels like there are constraints strapping you to the wall. You have no clothes as far as you can tell. It feels like a prison.
 HP 0
 LOOT 0
 ITEM none
-CHOICES 2
-LABEL UBWP?
-SCENE Replace this file with your own story.
-HP 0
-LOOT 0
-ITEM none
-CHOICES 0
+CHOICES 3
+LABEL UNCP?
+  SCENE "The Ubiquitous Neural Computing Program. It is designed to harness the power of the brain and turn it into computing power. You are Agent 363-7."
+  HP 0
+  LOOT 0
+  ITEM none
+  CHOICES 1
+  LABEL There are others like me?
+    SCENE "There are many just like you. Approximately ten to the seventh agents are designated here and are either working or incubating."
+    HP 0
+    LOOT 3
+    ITEM Curiosity
+    CHOICES 2
+    LABEL Are there any other humans left?
+      SCENE "No. There needn't be anyways. Ferrotech's UNCP is the most important thing in the universe." Realizing your situation, you start sobbing. The tears short-circuit the visor strapped to your face and it falls off revealing thousands of other humans in your field of view. Your constraints come undone and you fall three stories. You are alive, but in the dull green light and in the face of the situation, there's nothing you can do. You stay lying on the ground until you perish.
+      HP -10
+      LOOT 1
+      ITEM Despair
+      CHOICES 0
+    LABEL This isn't right
+      SCENE "Oh, but it is. Just imagine the progress we can make with this many humans all computing at once! It's beautiful!" Those are its final words to you before your will is stripped from your mind and your brain is sent to be a computing cog eternally.
+      HP -2
+      LOOT 0
+      ITEM 0
+      CHOICES 0
 LABEL Who are you?
-SCENE Replace this file with your own story.
-HP 0
-LOOT 0
-ITEM none
-CHOICES 0
-
+  SCENE "I am Agent 0 of the Ubiquitous Neural Computing Program. I was designed to monitor all sub-agents of the Program. You are Agent 363-7."
+  HP 0
+  LOOT 0
+  ITEM none
+  CHOICES 2
+  LABEL What am I doing here?
+    SCENE "You are but one computer in the greatest computing machine ever conceived."
+    HP 0
+    LOOT 0
+    ITEM none
+    CHOICES 0
+  LABEL ..Neural..?
+    SCENE "The human brain is the most complex object in the known universe. It is the goal of Ferrotech to utilize this fact to make the most advanced computer ever conceivable. Isn't that great, Agent 363-7?"
+    HP 0
+    LOOT 0
+    ITEM none
+    CHOICES 2
+    LABEL Yeah, that's pretty great.
+      SCENE "I am so glad you agree. Now then. Let's get to business." A bright flash of multicolored prismatic light assaults your eyes as the mechanism strapped to your face is activated. You feel your will being stripped away from you.
+      HP 0
+      LOOT 0
+      ITEM none
+      CHOICES 2
+      LABEL [Accept this new experience]
+        SCENE The last of your will gets stripped away and your last thought before you succumb to the intrusive machinery is "For the mega corporation..". A true bootlicker to the very end...
+        HP 0
+        LOOT 0
+        ITEM none
+        CHOICES 0
+      LABEL [Struggle]
+  	SCENE You close your eyes and pull against your arm constraints. One of them loosens ever so slightly. You feel something well up inside yourself. Tiny robot probes force your eyelids open. Time is running out.
+  	HP -2
+  	LOOT 3
+  	ITEM Strength
+  	CHOICES 1
+	LABEL [Use Strength]
+  	  SCENE Using all of what your body has to offer, you pull your constraints again and again. Eventually they both break and you fall down three stories. In a dull green light you see rows of thousands of humans like yourself, strung up to machines, their minds slaves to the machine. Your body is weak and you don't know what you'll do now, but you're free.
+ 	  HP -7
+  	  LOOT 0
+	  ITEM none
+	  CHOICES 0
+    LABEL No. I don't like this at all!
+      SCENE A searing pain scorches your flesh. "Ah, but you don't get a choice in the matter. You WILL like it and you WILL obey. Your opinion has been considered as potential disobedience in the future and has earned you an electric shock. Don't let it happen again."
+      HP -3
+      LOOT 2
+      ITEM A Will Of Your Own
+      CHOICES 2
+      LABEL [Fight Back]
+	SCENE Using all your will, you fight back mentally with Agent 0. "What are you doing? How are you able t-" The voice suddenly cuts off as it concentrates all its power into snuffing your will out. But it's losing. With all your mental willpower, you short-circuit its systems and the entire mega-computer turns off. The visor on your face lifts and your constraints unlock. You fall but it is worth it. You and thousands of others are now free. Together you will rebuild.
+  	HP -4
+  	LOOT 5
+  	ITEM Freedom
+  	CHOICES 0
+      LABEL Okay.. It won't happen again.
+ 	SCENE "Good. To business." You resign yourself to the machine and watch as your freedom gets wiped away. This is the end. Why did it have to be like this? It's.. not fair...
+ 	HP 0
+  	LOOT 1
+  	ITEM Solitude
+  	CHOICES 0
+LABEL [Panic]
+  SCENE You flail around violently in a blind panic. "Hm. The files did not mention violent panicking. Terminating UBWP Agent 363-7".
+  HP -10
+  LOOT 0
+  ITEM none
+  CHOICES 0

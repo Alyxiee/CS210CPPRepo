@@ -221,7 +221,7 @@ void Adventure::play() {
         std::cout << std::string(40,'-')<<std::endl; //prints the dashes
         std::cout << m->getText()<< std::endl;
         std::string item = m->getItem();
-        if (!item.empty() && item != "") {
+        if (!item.empty() && item != "none") {
             if (bool hasItem = inv.search(item)) {
                 std::cout << "You already have " << item << " item." << std::endl;
             }
