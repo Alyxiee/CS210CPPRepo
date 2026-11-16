@@ -1,19 +1,26 @@
 START_HP 10
-SCENE Starting UBWP-WP... Initialized. Welcome to UBWP. Do not be alarmed. Staying calm will greatly aid your adjustment to the Program.
+SCENE "Starting UBWP-WP... Initialized. Welcome to UBWP. Do not be alarmed. Staying calm will greatly aid your adjustment to the Program."
 HP 0
 LOOT 0
 ITEM none
-CHOICES 2
+CHOICES 3
 LABEL UBWP?
-SCENE Replace this file with your own story.
-HP 0
-LOOT 0
-ITEM none
-CHOICES 0
+  SCENE Replace this file with your own story.
+  HP 0
+  LOOT 0
+  ITEM none
+  CHOICES 0
 LABEL Who are you?
-SCENE Replace this file with your own story.
-HP 0
-LOOT 0
-ITEM none
-CHOICES 0
+  SCENE Replace this file with your own story.
+  HP 0
+  LOOT 0
+  ITEM none
+  CHOICES 0
+LABEL [Panic]
+  SCENE You flail around violently in a blind panic. "Hm. The files did not mention violent panicking. Terminating UBWP Agent 363-7".
+  HP -10
+  LOOT 0
+  ITEM none
+  CHOICES 0
+
 
